@@ -1,4 +1,5 @@
 2021-07-23
 =========================================
-index.html 추가
-./css/common.css 추가
+1)index.html 추가 
+2)./css/common.css 추가
+3)gradient 폴더 추가
