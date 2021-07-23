@@ -1,0 +1,79 @@
+header .container h1{
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+}
+
+input[type='color']{
+    position : absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.color1, .color2{
+    width: 40%;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    background-color: white;
+}
+
+.color1_circle, .color2_circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.color1 h1, .color2 h1{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+.mix_color{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1280px){
+    .mix_color{
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .color1, .color2{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .color1_circle, .color2_circle{
+        left: 20px;
+    }
+    .color1 h1, .color2 h1{
+        font-size : 15px;
+        left: 60%;
+    }
+    header .container h1{
+        text-align: center;
+        display: block
+    }
+}

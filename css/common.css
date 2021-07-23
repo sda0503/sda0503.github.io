@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -12,6 +13,7 @@ header{
 main{
     width: 100%;
     height: calc(100vh - 50px);
+    background: linear-gradient(135deg, #efefef, #e0e0e0);
 }
 
 .container{
@@ -19,4 +21,20 @@ main{
     max-width: 1280px;
     margin: auto;
     height: 100%;
+}
+
+main .container{
+    padding: 50px;
+}
+
+.flex{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+@media screen and (max-width: 1280px){
+    .flex{
+        flex-wrap: wrap;
+    }
 }
