@@ -1,3 +1,12 @@
+# 2021-07-26 index 수정
+1)index.html에 애드센스 추가
+
+2)index.html ui 수정
+
+3)index에서 각 페이지로 이동 붙였음
+
+4)index에서 내 블로그로 이동도 설정해놨음
+
 # 2021-07-26 Clock
 1)clock 폴더 추가
 
