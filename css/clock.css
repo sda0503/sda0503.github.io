@@ -1,14 +1,30 @@
-body{
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header .container h1{
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+}
+
+main .container{
     display:flex; 
     justify-content: center; 
+    flex-wrap: wrap;
     align-items: center; 
-    min-height:100vh; 
-    background-color: #091921;
+    min-height:calc(100vh - 50px); 
+    overflow: hidden;
 }
 
 .clock{
-    width:350px; 
-    height:350px; 
+    min-width: 250px;
+    min-height: 250px;
+    max-width:350px; 
+    max-height:350px; 
     display:flex; 
     justify-content: center; 
     align-items: center; 
@@ -27,7 +43,7 @@ body{
     position: absolute;
     width:15px;
     height:15px;    
-    background:#fff;
+    background:#333;
     border-radius: 50%;
     z-index : 10;
 }
@@ -65,7 +81,7 @@ body{
     position: absolute;
     width:8px;
     height:80px;    
-    background:#ff105e;
+    background:#222;
     z-index : 10;
     border-radius: 6px 6px 0 0;
 }
@@ -75,7 +91,7 @@ body{
     position: absolute;
     width:4px;
     height:90px;    
-    background:#ff105e;
+    background:#222;
     z-index : 10;
     border-radius: 6px 6px 0 0;
 }
@@ -85,7 +101,41 @@ body{
     position: absolute;
     width:2px;
     height:150px;    
-    background:#fff;
+    background:#333;
     z-index : 10;
     border-radius: 6px 6px 0 0;
+}
+
+.digital{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'LAB디지털';
+}
+
+
+.date, .time{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size:50px;
+}
+
+.hh, .mm, .ss{
+    text-align: center;
+    font-size:50px;
+}
+
+@media screen and (max-width: 1280px){
+
+    header .container h1{
+        text-align: center;
+        display: block
+    }
+
+    .date, .time, .hh, .mm, .ss {
+        font-size: 30px;
+    }
 }
