@@ -15,7 +15,7 @@ setInterval (()=> {
 
     //데이터 가져오기
     year = day.getFullYear();
-    month = day.getMonth();
+    month = day.getMonth() + 1;
     date = day.getDate();
     hour = day.getHours();
     min = day.getMinutes();
