@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 header{
@@ -12,7 +13,7 @@ header{
 
 main{
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background: linear-gradient(135deg, #efefef, #e0e0e0);
 }
 
@@ -21,6 +22,11 @@ main{
     max-width: 1280px;
     margin: auto;
     height: 100%;
+}
+
+.container h1{
+    color: white;
+    font-weight: bold;
 }
 
 main .container{

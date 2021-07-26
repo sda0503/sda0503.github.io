@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>구름이의 홈페이지</title>
+    <script src="./js/common.js"></script>
 </head>
 <body>
-    hellow world
+    <header>
+        <div class="container">
+            <h1>구름이의 홈페이지</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="contents">
+                <li onclick="move_page_in('gradient')">Gradient</li>
+                <li onclick="move_page_in('clock')">Clock</li>
+                <li onclick="move_page_out('https://jh91.tistory.com/')">구름이의 클라우드</li>
+                <li onclick="move_page_out('https://sda0503.shop/')">구름이의 게임리뷰</li>
+            </ul>
+        </div>
+    </main>
+    
     <!-- 에드 센스 추가 -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9727866007930371" crossorigin="anonymous"></script>
 </body>
