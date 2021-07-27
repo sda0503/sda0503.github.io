@@ -20,3 +20,11 @@ input2.addEventListener('input', function()
     var gradient = 'linear-gradient(135deg,'+  input1.value + ',' + input2.value  + ')';
     $('.mix_color').css('background',gradient);
 });
+
+$('.mix_color').click(function() {
+    color = $(this).attr('style') == null ? 'background: white;' : $(this).attr('style');
+    color_name = color.replace(/background: /g,'');
+    console.log(color_name);
+    copyText = $('.mix_color input').val(color_name);
+    document.execCommand(copyText);
+})
