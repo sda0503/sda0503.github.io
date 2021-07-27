@@ -55,6 +55,9 @@ input[type='color']{
     margin-bottom: 50px;
     background-color: white;
 }
+.mix_color input{
+    opacity: 0;
+}
 
 @media screen and (max-width: 1280px){
     .mix_color{
