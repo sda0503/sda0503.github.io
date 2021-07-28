@@ -1,0 +1,14 @@
+.container ul{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    height : auto;
+}
+
+.container ul li{
+    width : 30%;
+    height : 100px;
+    background-color: white;
+    margin: 25px 1.5%;
+    cursor : pointer;
+}
