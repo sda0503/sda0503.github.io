@@ -8,8 +8,6 @@ reader.onload = function() {
 };
 reader.send(null);
 $('#readme').click(function(){
-    $('#readme pre').toggle(function(){
-        $('#readme').text('Read Me ▲');
-    });
+    $('#readme pre').toggle();
 })
 
