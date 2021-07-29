@@ -30,6 +30,8 @@
     border-radius: 20px;
     background-color: white;
     margin-bottom: 50px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #readme input{
@@ -38,10 +40,12 @@
 
 #readme label{
     font-size: 30px;
+    font-weight: bold;
 }
 
 #readme pre{
     display: none;
+    transform: all 2s;
 }
 
 
