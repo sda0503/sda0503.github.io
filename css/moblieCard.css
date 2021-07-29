@@ -40,6 +40,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     font-family: 'f777Lovespring';
 }
@@ -143,4 +150,19 @@ hr{
 
 .page3 > div h1{
     text-align : center;
+}
+
+.info p{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'NotoSerifKR' !important;
+}
+
+.info p span{
+    font-size: 25px;
+    line-height: 20px;
+    color: rgb(37, 37, 37);
+    font-family: 'NotoSerifKR' !important;
+    font-weight: bold;
 }
