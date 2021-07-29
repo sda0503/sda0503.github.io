@@ -35,16 +35,10 @@
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    display: block;
 }
 
 #readme:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-
-.container input{
-    display: none;
 }
 
 #readme pre{
