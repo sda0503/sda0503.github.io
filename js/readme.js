@@ -7,3 +7,10 @@ reader.onload = function() {
     };
 };
 reader.send(null);
+
+if($('#readme_text').is(":checked")){
+    $('#readme pre').fadeIn();
+}
+else{
+    $('#readme pre').fadeOut();
+}
