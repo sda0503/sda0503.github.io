@@ -1,4 +1,9 @@
+# 2021-07-+29 Readme
+1)index에서 readme 읽을수 있도록 하였음 
+
+
 # 2021-07-28 Hover 
+1)hover 폴더 추가
 
 
 # 2021-07-27 Gradient 추가
@@ -18,6 +23,7 @@
 
 4)index에서 내 블로그로 이동도 설정해놨음
 
+
 # 2021-07-26 Clock
 1)clock 폴더 추가
 
@@ -27,8 +33,8 @@
 
 4)getMonth는 0 ~ 11까지 숫자를 나타나기 때문에 + 1을 해주었음(수정)
 
-# 2021-07-23 Gradient
 
+# 2021-07-23 Gradient
 1)index.html 추가 
 
 2)./css/common.css 추가
