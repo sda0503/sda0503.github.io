@@ -27,8 +27,6 @@
     width: 100%;
     height: auto;
     min-height: 100px;
-    max-height: 500px;
-    overflow-y: scroll;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 50px;
@@ -40,11 +38,11 @@
     position: relative;
 }
 
-#readme::-webkit-scrollbar{ 
+#readme pre::-webkit-scrollbar{ 
     width: 6px; 
 }
 
-#readme::-webkit-scrollbar-thumb{ 
+#readme pre::-webkit-scrollbar-thumb{ 
     height: 17%; 
     background-color: rgba(255,255,255,1);
     border-radius: 10px; 
@@ -66,6 +64,8 @@
     margin-top: 30px;
     display: none;
     font-size: 20px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 
