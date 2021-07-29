@@ -26,16 +26,29 @@
 #readme{
     width: 100%;
     height: auto;
-    min-height: 200px;
+    max-height: 500px;
+    overflow-y: scroll;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 50px;
-    padding: 10px;
+    padding: 25px;
     box-sizing: border-box;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
 }
+
+
+#readme::-webkit-scrollbar{ 
+    width: 6px; 
+}
+
+#readme::-webkit-scrollbar-thumb{ 
+    height: 17%; 
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px; 
+}
+
 
 #readme:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -43,7 +56,7 @@
 
 #readme pre{
     display: none;
-    transition: all 2s;
+    font-size: 20px;
 }
 
 
