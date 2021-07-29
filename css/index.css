@@ -34,7 +34,7 @@
     box-sizing: border-box;
 }
 
-#readme input{
+.container input{
     display: none;
 }
 
