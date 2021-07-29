@@ -8,15 +8,16 @@
 
 .contents > li{
     cursor: pointer;
-    width: 45%;
-    height: 200px;
+    width: auto;
+    height: 100px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    line-height: 200px;
+    line-height: 60px;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 50px;
+    padding: 20px;
 }
 
 .contents > li:hover{
