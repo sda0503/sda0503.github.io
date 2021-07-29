@@ -19,9 +19,9 @@
         <div class="container">
             <div id="readme">
                 <input type="checkbox" name="" id="">
-                <div>
+                <pre>
 
-                </div>
+                </pre>
             </div>
             <ul class="contents">
                 <li onclick="move_page_in('gradient')">Gradient</li>
@@ -43,7 +43,7 @@
             reader.overrideMimeType('text/plain; charset=utf-8');
             reader.onload = function() {
                 if (reader.status == 200) {
-                    $('#readme div').text(reader.responseText);
+                    $('#readme pre').text(reader.responseText);
                 };
             };
         reader.send(null);
