@@ -55,7 +55,8 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-#readme h2{
+#readme::before{
+    content: 'Read Me';
     position: absolute;
     top: 0;
     left: 0;
