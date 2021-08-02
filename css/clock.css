@@ -121,6 +121,9 @@ main .container{
     height: 50px;
     text-align: center;
     font-size:50px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .hh, .mm, .ss{
