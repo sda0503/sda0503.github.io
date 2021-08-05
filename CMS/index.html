@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/cms.css">
     <!-- 폰트 어썸 -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="../js/jquery-1.12.4.min.js"></script>
 </head>
 <body>
     <div class="cms">   
@@ -38,9 +39,16 @@
                     <li><img src="../img/human.jpg">name</li>
                 </ul>
             </div>
-            <iframe src="" frameborder="0"></iframe>
+            <iframe src="./0/index.html" frameborder="0"></iframe>
         </div>
     </div>
-
+    <script>
+        $('.menu li').click(function(){
+            $('.menu li').removeClass('on');
+            $(this).addClass('on');
+            var index = $(this).index();
+            $('.right iframe').attr('src','./'+index+'/index.html');
+        })
+    </script>
 </body>
 </html>
