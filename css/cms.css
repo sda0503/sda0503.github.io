@@ -1,0 +1,21 @@
+.cms{
+    display:flex;
+    width: 100%;
+}
+
+.left{
+    max-width: 240px;
+    height: auto;
+    min-height:100vh;
+}
+.right{
+    min-width: calc(100% - 240px);
+    max-width: 100%;
+    height: auto;
+    min-height:100vh;
+}
+
+head{
+    height: 65px;
+
+}
