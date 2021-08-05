@@ -7,15 +7,17 @@
     max-width: 240px;
     height: auto;
     min-height:100vh;
+    background-color: #1E293B;
 }
 .right{
     min-width: calc(100% - 240px);
     max-width: 100%;
     height: auto;
     min-height:100vh;
+    background-color: #F1F5F9;
 }
 
-head{
+.header{
     height: 65px;
 
 }
