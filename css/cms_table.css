@@ -1,0 +1,86 @@
+body{
+    margin:0;
+    padding:32px;
+}
+.table_head{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    background-color: #334155;
+    color:white;
+}
+
+.table_body{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 테이블에 효과 시작 */
+/* .table_body div{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.table_body div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    display: none;
+}
+
+
+.table_body div:hover::before{
+    display: block;
+} */
+
+/* 테이블에 효과 끝 */
+
+.table_body:nth-child(2n - 1){
+    background-color: #E2E8F0;
+}
+.table_body:nth-child(2n){
+    background-color: #ecedee;
+}
+
+.table_head div{
+    width: 25%;
+    text-indent: 10px;
+}
+
+.table_body div label{
+    display: inline-block;
+    width: 70%;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+.table_body div{
+    width: 25%;
+    text-indent: 10px;
+}
+
+.table_body div:last-child button{
+    margin-right: 10px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #1E293B;
+    color:white;
+    outline: none;
+    width: 70px;
+    height: 30px;
+    border: 0;
+}
+.top{
+    margin-top : 50px;
+    text-align:right;
+}

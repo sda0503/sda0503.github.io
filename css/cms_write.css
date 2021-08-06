@@ -1,0 +1,12 @@
+h1{
+    display: inline-block;
+    margin: 0;
+    width: 40px;
+    vertical-align: middle;
+}
+
+input{
+    width: 80%;
+    height: 43px;
+    vertical-align: middle;
+}

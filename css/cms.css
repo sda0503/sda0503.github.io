@@ -5,6 +5,7 @@
 
 .left{
     max-width: 240px;
+    width: 20%;
     height: auto;
     min-height:100vh;
     background-color: #1E293B;
@@ -20,7 +21,7 @@
     min-height:100vh;
     background-color: #F1F5F9;
     position: relative;
-    left:240px
+    left:240px;
 }
 
 .header{
@@ -113,4 +114,21 @@
     width: 100%;
     min-height: calc(100% - 69px);
     height: auto;
+}
+
+@media screen and (max-width: 1300px){
+    
+    .left{
+
+    }
+
+    .right{
+        min-width: calc(100% - 20%);
+        left:20%;
+    }
+
+    .table_head div:nth-child(2), .table_head div:nth-child(4),
+    .table_body div:nth-child(2), .table_body div:nth-child(4){
+        display:none;
+    }
 }

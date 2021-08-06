@@ -5,53 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            margin:0;
-            padding:32px;
-        }
-        .table_head{
-            display: flex;
-            height: 40px;
-            line-height: 40px;
-            background-color: #334155;
-            color:white;
-        }
-        
-        .table_body{
-            display: flex;
-            height: 40px;
-            line-height: 40px;
-        }
-        .table_body:nth-child(2n - 1){
-            background-color: #E2E8F0;
-        }
-        
-        .table_head div{
-            width: 25%;
-            text-indent: 10px;
-        }
-
-        .table_body div{
-            width: 25%;
-            text-indent: 10px;
-        }
-
-        .table_body div:last-child button{
-            margin-right: 10px;
-        }
-
-        button{
-            cursor: pointer;
-            background-color: #1E293B;
-            color:white;
-            outline: none;
-            width: 70px;
-            height: 30px;
-            border: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../../css/cms_table.css">
 </head>
 <body>
     <h1>Speakers</h1>
@@ -61,7 +15,7 @@
         <div>직책/회사(기관)</div>
         <div>조회수</div>
         <div>관심등록</div>
-        <div>시간</div>
+        <div>노출여부</div>
         <div>기타</div>
     </div>
     <div class='table_body'>
@@ -69,17 +23,20 @@
         <div>사원/SKY</div>
         <div>0</div>
         <div>0</div>
-        <div></div>
-        <div><button>수정</button><button>미리보기</button></div>
+        <div>0</div>
+        <div><button onclick="location.href='./read.html'">수정</button><button onclick="location.href='./read.html'">미리보기</button></div>
     </div>
     <div class='table_body'>
         <div><input type="checkbox" name="" id=""><label for="">윤재현</label></div>
         <div>사원/SKY</div>
         <div>0</div>
         <div>0</div>
-        <div></div>
-        <div><button>수정</button><button>미리보기</button></div>
+        <div>0</div>
+        <div><button onclick="location.href='./read.html'">수정</button><button onclick="location.href='./read.html'">미리보기</button></div>
     </div>
-    <button onclick="location.href='./write.html'">등록</button>
+    <div class="top">
+        <button onclick="location.href='./write.html'">등록</button>
+        <button>삭제</button>
+    </div>
 </body>
 </html>
