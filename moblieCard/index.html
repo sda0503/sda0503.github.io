@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/moblieCard.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <title>우리 결혼 합니다</title>
 </head>
 <body>
@@ -48,7 +50,19 @@
         <h1>우리의 둘만의<br>
         아름다운 시간들</h1>
         <hr>
-        
+            <div class="swiper-container"> 
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry01.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry06.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry07.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry08.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry02.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry03.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry04.jpg"> </div> 
+                    <div class="swiper-slide"> <img src="../img/moblieCard/marry05.jpg"> </div> 
+                </div>
+                <div class="swiper-pagination"></div> 
+            </div>
         <hr>            
     </div>
     <div class="page2">
@@ -91,6 +105,27 @@
                 $('*').css('font-family','Hana_handwriting');
             }
         })
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper-container', { 
+            direction: 'horizontal', 
+            slidesPerView: 1, 
+            debugger: true, 
+            mousewheel: true, 
+            loop: true, 
+            centeredSlides: true, 
+            effect: 'fade', 
+            //자동 스크를링 
+            autoplay: { 
+                delay: 2500, 
+                disableOnInteraction: false, 
+            }, 
+            //페이징 
+            pagination: {
+                el: '.swiper-pagination', 
+                clickable: true, 
+            }, 
+        });
     </script>
 </body>
 </html>

@@ -166,3 +166,11 @@ hr{
     font-family: 'NotoSerifKR' !important;
     font-weight: bold;
 }
+
+.swiper-container{
+    height: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
