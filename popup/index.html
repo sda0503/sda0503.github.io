@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>구름이의 홈페이지</title>
+    <script src="./js/common.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>이미지위에 글씨 넣기</h1>
+        </div>
+    </header>
+    <main>
+        <style>
+            #link1 {
+                /* 초기 셋팅해야 될 부분 */
+                position:relative;
+                width: 100%;
+                height:auto;
+            }
+            #link1 > p{
+                width: auto;
+                height:auto;
+                /* 글자 색 */
+                color: white;
+                /* 영역 설정 position은 건들지 마시오*/
+                position:absolute;
+                /* left는 가로 위치 원하는걸로 바꿔도 됩니다.*/
+                left:50%;
+                /* bottom은 세로 위치 원하는 걸로 바꿔도 됩니다 */
+                bottom: 180px;
+                /* 글자 배경색 */
+                background-color: blue;
+                /* 글자 외부 추가 영역(배경색 넣을시에는 설정하는게 이쁘게 나와요) */
+                padding: 5px;
+                /* 버튼 모양처럼 만들어 줍니다. 설정 안하거나 0 으로 설정하면 네모 박스로 나와요 */
+                border-radius: 10px;
+            }
+        </style>
+        <a id="link1" href="http://www.sahmyook.co.kr/common/board/listbody.html?a_gb=board&amp;a_cd=7&amp;a_item=0&amp;sm=5_5&amp;page=1&amp;po_no=525" target="_blank">
+            <img src="http://www.sahmyook.co.kr/files/images/11ea6bb8a1a91b5e075a417b9571f909.gif">
+            <div>식품연구소 연구원 O명</div>
+        </a>
+    </main>
+    <!-- index 스크립트 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/readme.js"></script>
+
+</body>
+</html>
