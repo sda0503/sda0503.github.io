@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구름이의 홈페이지</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cms.css">
+    <!-- 폰트 어썸 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="cms">   
+        <div class="left">
+            <div class="header">
+                profile
+            </div>
+            <ul class="menu">
+                <li class="on"><i class="far fa-file"></i> Index</li>
+                <li><i class="fas fa-calendar-alt"></i> Agenda</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Speakers</li>
+                <li><i class="fas fa-info-circle"></i> Heroes</li>
+                <li><i class="fab fa-battle-net"></i> Networking</li>
+                <li><i class="fas fa-gift"></i> Event</li>
+                <li><i class="fas fa-question-circle"></i> FAQ</li>
+                <li><i class="fas fa-user-circle"></i> User</li>
+                <li><i class="fas fa-comments"></i> Messages</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="header">
+                <ul>
+                    <li><i class="fas fa-heart"></i></li>
+                    <li><i class="fas fa-comments"></i></li>
+                    <li><i class="fas fa-clipboard-check"></i></li>
+                    <li><img src="../img/human.jpg">name</li>
+                </ul>
+            </div>
+            <iframe src="./0/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script>
+        $('.menu li').click(function(){
+            $('.menu li').removeClass('on');
+            $(this).addClass('on');
+            var index = $(this).index();
+            $('.right iframe').attr('src','./'+index+'/index.html');
+        })
+    </script>
+</body>
+</html>
