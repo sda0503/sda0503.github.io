@@ -5,16 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>구름이의 홈페이지</title>
-    <link rel="stylesheet" href="../css/common.css">
+    <link rel=  "stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
     <style>
         .page{
             width: 100%;
             height: 100vh;
+            background-color : #111;
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            flex-direction: column;
         }
-    </style>
+        .row{
+            position: relative;
+            top: -50%;
+            left: -10%;
+            width: 100%;
+            height:auto;
+            display: flex;
+            padding: 10px 0;
+            white-space: nowrap;
+            font-size: 64px;
+            transform: rotate(-30deg);
+        }
+        i{
+            color:rgba(255,255,255,0.5);
+            transition: 1s;
+            padding: 0 5px;
+            /* user-select: none;
+            cursor:default; */
+        }
+        i:hover{
+            color: #fff;
+            text-shadow:  0 0 120px #fff;
+            transition: 0s;
+        }
+
+        .row div{
+            animation: animate 60s linear infinite;
+        }
+
+        @keyframes animate{
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(-50%);
+            }
+        }
+    </style> 
 </head>
 <body>
+    <div class="page">
+        
+    </div>
+    <div class="page"></div>
+    <div class="page"></div>
     <div class="page"></div>
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+        var rows = `<div class="row">
+            <div>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+                <i class="far fa-file"></i>
+                <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-chalkboard-teacher"></i> 
+                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-comments"></i>
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>`;
+        for(i = 0; i< 20; i ++){
+            $('.page').eq(0).append(rows);
+        }
+        $('.page').eq(0).on('scroll',function(){
+            
+        });
+
+    </script>
 </body>
 </html>
